@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #000000, #ff69b4);
+  color: white;
+}
+
+/* Topbar */
+.topbar {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 999;
+}
+
+.profile-section {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 170px; /* bigger now */
+  height:170px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.menu-toggle {
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-content {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 110px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  overflow: hidden;
+  animation: slideDown 0.3s ease;
+}
+
+.menu-content a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.menu-content a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Smooth Drop animation */
+@keyframes slideDown {
+  0% { transform: translateY(-20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+}
+
+
+/* Hero Section */
+.hero {
+  margin-top: 100px;
+  text-align: center;
+  padding: 50px;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Content Sections */
+.content-section {
+  padding: 40px;
+}
+
+/* Certificates visible properly */
+.certificate {
+  width: 160px;
+  height: 250px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.certificate:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8em;
+}
