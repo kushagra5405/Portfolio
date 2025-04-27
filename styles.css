@@ -15,17 +15,6 @@ body {
   gap: 15px;
   z-index: 999;
 }
-#preloader {
-  background: #000 url('https://i.gifer.com/ZZ5H.gif') no-repeat center center;
-  background-size: 80px 80px;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-}
-
 
 .profile-section {
   position: absolute;
